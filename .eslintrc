@@ -1,0 +1,10 @@
+{
+    "env": {
+        "jest": true,
+        "node": true
+    },
+    "parserOptions": { 
+        "sourceType": "module" 
+    },
+    "extends": "is2ei"
+}
