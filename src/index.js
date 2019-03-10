@@ -27,8 +27,14 @@ module.exports = {
             },
             params: {
                 message: {type: "string"},
-                token: {type: "string", optional: true},
-                topicID: {type: "string", optional: true}
+                token: {
+                    optional: true,
+                    type: "string"
+                },
+                topicID: {
+                    optional: true,
+                    type: "string"
+                }
             }
         }
     },
