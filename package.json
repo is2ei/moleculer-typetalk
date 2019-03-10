@@ -1,6 +1,6 @@
 {
     "name": "moleculer-typetalk",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Moleculer addon that posts message to Typetalk.",
     "main": "index.js",
     "license": "MIT",
