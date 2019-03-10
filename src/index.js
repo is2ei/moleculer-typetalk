@@ -21,14 +21,14 @@ module.exports = {
         post: {
             handler (ctx) {
                 const message = ctx.params.message,
-                    token = ctx.params.token,
-                    topicID = ctx.params.topicID;
+                    token = ctx.params.token || this.settings.token,
+                    topicID = ctx.params.topicID || this.settings.topicID;
                 return this.postMessage(message, token, topicID);
             },
             params: {
                 message: {type: "string"},
-                token: {type: "string"},
-                topicID: {type: "string"}
+                token: {type: "string", optional: true},
+                topicID: {type: "string", optional: true}
             }
         }
     },
@@ -37,8 +37,12 @@ module.exports = {
      * Service created lifecycle event handler
      */
     created () {
-        if (!this.settings) {
+        if (!this.settings.token) {
             const WARN_MSG = "`moleculer-typetalk` requires typetalk token!";
+            this.logger.warn(WARN_MSG);
+        }
+        if (!this.settings.topicID) {
+            const WARN_MSG = "`moleculer-typetalk` requires typetalk topic id!";
             this.logger.warn(WARN_MSG);
         }
         return this.Promise.resolve();
