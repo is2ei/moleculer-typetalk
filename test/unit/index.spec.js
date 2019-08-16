@@ -1,6 +1,9 @@
+/* eslint-disable max-lines-per-function */
+
 const TypetalkService = require("../../src"),
     nock = require("nock"),
-    {ServiceBroker} = require("moleculer");
+    {ServiceBroker} = require("moleculer"),
+    {MoleculerError} = require("moleculer").Errors;
 
 describe("Test TypetalkService", () => {
     const broker = new ServiceBroker({"logger": false}),
@@ -42,6 +45,18 @@ describe("Test TypetalkService", () => {
         }).then((response) => {
             expect(response.status).toBe(OK);
         });
+    });
+
+    it("should return MoleculerError", () => {
+        nock("https://typetalk.com")
+            .post("/api/v1/topics/12345")
+            .replyWithError("Something happened");
+
+        return broker.call("typetalk.post", {
+            "message": "Hello world",
+            "token": "qweasdzxc",
+            "topicID": "12345"
+        }).catch((err) => expect(err).toBeInstanceOf(MoleculerError));
     });
 
 });
