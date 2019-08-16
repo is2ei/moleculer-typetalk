@@ -1,8 +1,8 @@
 language: "node_js"
 node_js:
-  - "11"
-  - "10"
   - "8"
+  - "10"
+  - "12"
 
 script:
   - "npm run lint"
@@ -11,3 +11,13 @@ script:
 #   - "npm run report-coverage"
 
 sudo: false
+
+deploy:
+  provider: npm
+  email:
+    secure: "2CSXfvSwoCJcINT2hXl/VYSPjV36CetYCo39VOrDUIyj6UpNzXyTFS2N8aMl2jPzs8EOuEm9kqBzlDSQ3nyuXpCCA+EyrfT84PO+Oe2HzsCRTgk2XE/eSiyhq3n6tVyJg3ZVBXKuo0W+tZT9WML0Zr37GwYQypJIaLbrVi9INcwNnlnz+qEJizt6FoPTDcQXrmP5L9wCJtmC16nkdFD/DJj83RQlHJqjY3G6kFlPG3OqQQX6NeuFljAzeXniHpkggPcubCPf3CCOLut3w5nj5SFL7YsareQxOOM+bsU6BOWQ0UZ2dxBTbBiZKD0/vzDVFxLma5IgUCSP6TRWO7UcjVS6GH5gP0Jk4RkBGHsQzRemWsVW64kwc231whIfyEFqS/s/nr/b5Gr/tmp00E+/k/9OHRc64JPPrmYjTg7l+GiuWh6/ZOYaVlF8et3eRaiWCQkhB6oa/BYe3O/8Efyui9+WbC+H6bnOjT8S63ni6N/9Rme58KQ/OVxLlYxlyJzeTqskaQUWyXFu08f4S5L6r9Weta9WC6zxjLIl+DwXl8RoGW1AP7Y8Ndi6fu3pAGkqgcJjbGuNAN59dDB+3NCYnoFN3a2ZVsdxPpgGjZ/4fCwWxJjAzDQLcn+n89BCWl++Ecgz4Go3+eej62QAg6WKVPaK4JbUaBxaP9ZlYVSPA2c="
+  api_key:
+    secure: "tVCmqzNdmBiZkGwzEpReLKbkENdKWwYMdvzCRvITTbx6DKGEPjmikUVg4aOE2GzaRBL18nU076dQ0VfzBqXVEOqQfVxC9ggOxxrPsk7i90gyYD0Z+pr9IaUg2ohAfAAAMd+GAXso9gnl2rzk5zp50h+bjOyO/Y8QfdXi2KOSQir5wilqFuNxNIKHsDpvloHlIn7x5NPRehl4Aof55XtBmTL/u42E7PHcHsgJLLcmiUqIC+UwdZloSMX5TI7/sDPUP8AKbSYqIhUnlXFBgQwoLlIiFhH3cWSrvQJbJHs2U5wfw6JAHWMXEtDnMNczZu6iPxur45lMn3g9FVo7H2oOJr4bSh0lCUmrYnsYDWCeSvUwZHQSSPxJKE8SzYVA1ssH5+NeQk3Y3X/jKIa2b2b4NB0i92B4v8GNHLO2D8kk2GwgkeGhMTgk8zO3xnIDiAx7XKE4m9ggW8w69dHlKq4Km9XbUaPcGohsPtLNVYP9rWbjXgUmF6ZQkWpDvbB0/P56vHX+HO9ssqtiOqqH1wM+5ufVQExGnLqKbWQicEs0exqhK06ElspVooCwWbhI1QFYjce7P5coT2rX5ydViRFM+DmGpuzKBUk3KcyrqacmcK1Q4s2GMQ0ybveC4kJ1Bumaox0C1/qGxYXHvPfUJP8/8MGXwQOzSPUGoB/qOc5EBFM="
+  on:
+    tags: true
+    repo: is2ei/passport-typetalk
