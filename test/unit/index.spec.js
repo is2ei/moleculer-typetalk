@@ -59,4 +59,15 @@ describe("Test TypetalkService", () => {
         }).catch((err) => expect(err).toBeInstanceOf(MoleculerError));
     });
 
+    it("should createService", () => {
+        expect(() => broker.createService({
+            mixins: [TypetalkService],
+            name: "typetalk",
+            settings: {
+                token: "123qweasd",
+                topicID: "12345"
+            }
+        })).not.toThrow();
+    });
+
 });
