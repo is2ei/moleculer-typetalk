@@ -11,7 +11,8 @@
     "homepage": "https://github.com/is2ei/moleculer-typetalk",
     "scripts": {
         "lint": "eslint --ext=.js ./ ./src/ ./test",
-        "test": "jest --coverage"
+        "test": "jest --coverage",
+        "report-coverage": "cat ./coverage/lcov.info | coveralls"
     },
     "keywords": [
         "microservice",
@@ -23,6 +24,7 @@
     },
     "devDependencies": {
         "acorn": "^6.0.0",
+        "coveralls": "^3.0.6",
         "eslint": "^5.15.1",
         "eslint-config-is2ei": "^0.1.6",
         "jest": "^24.3.1",

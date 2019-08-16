@@ -7,8 +7,8 @@ node_js:
 script:
   - "npm run lint"
 
-# after_success:
-#   - "npm run report-coverage"
+after_success:
+  - "npm run report-coverage"
 
 sudo: false
 

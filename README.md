@@ -4,9 +4,11 @@ moleculer-typetalk
 ===
 
 [![Build Status](https://img.shields.io/travis/com/is2ei/moleculer-typetalk/master.svg?style=flat-square)][travis]
+[![Coverage Status](https://coveralls.io/repos/github/is2ei/moleculer-typetalk/badge.svg?branch=master)][coveralls]
 [![npm version](https://img.shields.io/npm/v/moleculer-typetalk.svg?style=flat-square)][npm]
 
 [travis]: https://travis-ci.com/is2ei/moleculer-typetalk
+[coveralls]: https://coveralls.io/github/is2ei/moleculer-typetalk?branch=master
 [npm]: https://badge.fury.io/js/moleculer-typetalk
 
 ## Install
