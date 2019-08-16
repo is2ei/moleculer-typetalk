@@ -8,6 +8,14 @@
         "type": "git",
         "url": "git@github.com:is2ei/moleculer-typetalk.git"
     },
+    "bugs": {
+        "url": "https://github.com/is2ei/moleculer-typetalk/issues"
+    },
+    "author": {
+        "name": "Issei Horie",
+        "email": "is2ei.horie@gmail.com",
+        "url": "http://is2ei.com"
+    },
     "homepage": "https://github.com/is2ei/moleculer-typetalk",
     "scripts": {
         "lint": "eslint --ext=.js ./ ./src/ ./test",
