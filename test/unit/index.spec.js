@@ -47,6 +47,25 @@ describe("Test TypetalkService", () => {
         });
     });
 
+    it("should call postMessage method without token and topicID", () => {
+        nock("https://typetalk.com")
+            .post("/api/v1/topics/12345")
+            .replyWithError("Something happened");
+
+        broker.createService({
+            mixins: [TypetalkService],
+            name: "typetalk",
+            settings: {
+                token: "123qweasd",
+                topicID: "12345"
+            }
+        });
+
+        broker.call("typetalk.post", {
+            "message": "Hello world",   
+        });
+    });
+
     it("should return MoleculerError", () => {
         nock("https://typetalk.com")
             .post("/api/v1/topics/12345")
