@@ -62,7 +62,7 @@ describe("Test TypetalkService", () => {
         });
 
         broker.call("typetalk.post", {
-            "message": "Hello world",   
+            "message": "Hello world"
         });
     });
 
