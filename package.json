@@ -5,8 +5,10 @@
     "main": "index.js",
     "license": "MIT",
     "repository": {
-        "type": "git"
+        "type": "git",
+        "url": "git@github.com:is2ei/moleculer-typetalk.git"
     },
+    "homepage": "https://github.com/is2ei/moleculer-typetalk",
     "scripts": {
         "lint": "eslint --ext=.js ./ ./src/ ./test",
         "test": "jest --coverage"
@@ -17,10 +19,10 @@
         "typetalk"
     ],
     "dependencies": {
-        "acorn": "^6.0.0",
         "node-fetch": "^2.3.0"
     },
     "devDependencies": {
+        "acorn": "^6.0.0",
         "eslint": "^5.15.1",
         "eslint-config-is2ei": "^0.1.6",
         "jest": "^24.3.1",
