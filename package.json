@@ -33,7 +33,7 @@
     "devDependencies": {
         "acorn": "^6.0.0",
         "coveralls": "^3.0.9",
-        "eslint": "^5.15.1",
+        "eslint": "^6.7.2",
         "eslint-config-is2ei": "^0.1.6",
         "jest": "^24.8",
         "moleculer": "^0.13.7",
