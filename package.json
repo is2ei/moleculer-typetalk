@@ -7,6 +7,7 @@
         "moleculer",
         "typetalk"
     ],
+    "homepage": "https://github.com/is2ei/moleculer-typetalk",
     "main": "index.js",
     "license": "MIT",
     "repository": {
@@ -21,7 +22,6 @@
         "email": "is2ei.horie@gmail.com",
         "url": "http://is2ei.com"
     },
-    "homepage": "https://github.com/is2ei/moleculer-typetalk",
     "scripts": {
         "lint": "eslint --ext=.js ./ ./src/ ./test",
         "test": "jest --coverage",
