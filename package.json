@@ -28,7 +28,7 @@
         "typetalk"
     ],
     "dependencies": {
-        "node-fetch": "^2.3.0"
+        "node-fetch": "^2.6.0"
     },
     "devDependencies": {
         "acorn": "^6.0.0",
