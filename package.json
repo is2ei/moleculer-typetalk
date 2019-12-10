@@ -8,8 +8,8 @@
         "typetalk"
     ],
     "homepage": "https://github.com/is2ei/moleculer-typetalk",
-    "main": "index.js",
     "license": "MIT",
+    "main": "index.js",
     "repository": {
         "type": "git",
         "url": "git@github.com:is2ei/moleculer-typetalk.git"
