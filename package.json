@@ -12,15 +12,15 @@
         "url": "https://github.com/is2ei/moleculer-typetalk/issues"
     },
     "license": "MIT",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:is2ei/moleculer-typetalk.git"
-    },
     "author": {
         "name": "Issei Horie",
         "email": "is2ei.horie@gmail.com",
         "url": "http://is2ei.com"
+    },
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:is2ei/moleculer-typetalk.git"
     },
     "scripts": {
         "lint": "eslint --ext=.js ./ ./src/ ./test",
