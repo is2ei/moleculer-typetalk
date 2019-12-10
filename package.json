@@ -8,14 +8,14 @@
         "typetalk"
     ],
     "homepage": "https://github.com/is2ei/moleculer-typetalk",
+    "bugs": {
+        "url": "https://github.com/is2ei/moleculer-typetalk/issues"
+    },
     "license": "MIT",
     "main": "index.js",
     "repository": {
         "type": "git",
         "url": "git@github.com:is2ei/moleculer-typetalk.git"
-    },
-    "bugs": {
-        "url": "https://github.com/is2ei/moleculer-typetalk/issues"
     },
     "author": {
         "name": "Issei Horie",
