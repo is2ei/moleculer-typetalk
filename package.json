@@ -2,6 +2,11 @@
     "name": "moleculer-typetalk",
     "version": "1.0.0",
     "description": "Moleculer addon that posts message to Typetalk.",
+    "keywords": [
+        "microservice",
+        "moleculer",
+        "typetalk"
+    ],
     "main": "index.js",
     "license": "MIT",
     "repository": {
@@ -22,11 +27,6 @@
         "test": "jest --coverage",
         "report-coverage": "cat ./coverage/lcov.info | coveralls"
     },
-    "keywords": [
-        "microservice",
-        "moleculer",
-        "typetalk"
-    ],
     "dependencies": {
         "node-fetch": "^2.6.0"
     },
