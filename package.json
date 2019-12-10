@@ -36,7 +36,7 @@
         "eslint": "^6.7.2",
         "eslint-config-is2ei": "^0.1.6",
         "jest": "^24.8",
-        "moleculer": "^0.13.7",
+        "moleculer": "^0.13.11",
         "nock": "^11.7.0"
     }
 }
