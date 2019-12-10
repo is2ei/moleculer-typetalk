@@ -20,7 +20,7 @@ module.exports = {
          */
         post: {
             handler (ctx) {
-                const message = ctx.params.message,
+                const {message} = ctx.params,
                     token = ctx.params.token || this.settings.token,
                     topicID = ctx.params.topicID || this.settings.topicID;
                 return this.postMessage(message, token, topicID);
