@@ -28,7 +28,7 @@
         "report-coverage": "cat ./coverage/lcov.info | coveralls"
     },
     "dependencies": {
-        "node-fetch": "^2.6.0"
+        "node-fetch": "^3.1.1"
     },
     "devDependencies": {
         "coveralls": "^3.0.9",
